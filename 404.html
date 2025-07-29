@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Erro 404 - Página não encontrada</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      background: #0d0d0d;
+      color: #fff;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 4rem;
+      color: #ffb300;
+      animation: flicker 1.5s infinite alternate;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #fffffff;
+      margin-top: 20px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    a {
+      margin-top: 30px;
+      display: inline-block;
+      color: #fbd300;
+      text-decoration: none;
+      border: 1px solid #fbd300;
+      padding: 10px 20px;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      background: #fbd300;
+      color: #000;
+    }
+
+    @keyframes flicker {
+      0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        opacity: 1;
+      }
+      20%, 24%, 55% {
+        opacity: 0.3;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Página não encontrada.<br> #404</h1>
+  <p>Estamos em desenvolvimento ainda, desculpe.</p>
+  <a href="/">Voltar ao início</a>
+</body>
+</html>
